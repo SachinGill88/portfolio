@@ -19,7 +19,7 @@ export const siteConfig = {
     "Python", "C",
     "Computer Vision", "Deep Learning", "Reinforcement Learning",
     "ROS2", "TensorFlow", "PyTorch", "OpenCV", "Scikit-Learn", 
-    "Docker", "Linux", "CUDA", ".NET", "Node.js", "Angular"
+    "Docker", "Linux", "CUDA", ".NET"
   ],
 
   projects: [
