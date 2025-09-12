@@ -1,91 +1,133 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  name: "Sachin Gill",
+  title: "Mechatronics Engineering Student",
+  description: "Portfolio website of Sachin Gill",
+  accentColor: "#d81d1dff",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "sachin.gill@gmail.com",
+    linkedin: "https://www.linkedin.com/in/sachin-gill88/",
+    github: "https://github.com/SachinGill88",
   },
+  resume: "/Sachin_Resume.pdf", 
+  profilePicture: "/images/profile-picture.jpg", 
+
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I’m a 4th-year Mechatronics Engineering student at the University of Waterloo, passionate about robotics and intelligent systems at the intersection of hardware and software. I’m also completing a minor in Artificial Intelligence, and I aim to apply my skills toward impactful robotics and AI projects.\n\n" +
+    "Outside of academics, I’m a big sports fan. I grew up playing hockey and more recently have been getting into golf. I enjoy challenging myself, learning new skills, and building systems that make a difference.",
+
+  skills: [
+    "Python", "C",
+    "Computer Vision", "Deep Learning", "Reinforcement Learning",
+    "ROS2", "TensorFlow", "PyTorch", "OpenCV", "Scikit-Learn", 
+    "Docker", "Linux", "CUDA", ".NET", "Node.js", "Angular"
+  ],
+
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "RL Robot Stand Up Policy",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Designed and implemented a reinforcement learning algorithm to train a 30 DOF humanoid robot for autonomous fall recovery, with a fallen pose generation system and GPU-accelerated training.",
+      link: "https://github.com/SachinGill88/Fall_Recovery",
+      skills: ["Python", "MuJoCo", "StableBaseline", "CUDA", "PyTorch"],
+      image: "/images/rl-robot.jpg",
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "AI Golf Caddie",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Built an end-to-end ML golf caddie that recommends optimal clubs based on distance and conditions, with regression models for swing prediction and a computer vision pipeline.",
+      link: "https://github.com/SachinGill88/AI-Golf-Caddie",
+      skills: ["Python", "Pandas", "NumPy", "OpenCV", "MediaPipe", "JavaScript"],
+      image: "/images/golf-caddie.jpg",
     },
     {
-      name: "ExtensionKit",
+      name: "University of Waterloo Mars Rover Team",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Developed firmware training for new members (servo PWM on STM32) and optimized drivetrain performance using ROS2/C++ with CAN and I2C protocols.",
+      skills: ["C++", "ROS2", "STM32", "PWM", "CAN", "I2C"],
+      image: "/images/mars-rover.jpg",
+    },
+    {
+      name: "Robot Card Dealer",
+      description:
+        "Led a team of 4 in designing and building an autonomous robot using LEGO EV3 to deal playing cards. This robot used custom 3D printed parts to accurately deal 1 card at a time to up to 12 players.",
+      link: "https://github.com/SachinGill88/Robot-Card-Dealer-Code",
+      skills: ["C", "C++", "EV3", "Solidworks"],
+      image: "/images/robot-card-dealer.jpg",
+    },
+    {
+      name: "Music Recommendation Engine",
+      description:
+        "Built an intelligent music recommendation system using natural language processing to recommend similar songs to the user's interests using a cosine similarity approach that analyzes the lyrics of the user's preferred songs.",
+      link: "https://github.com/SachinGill88/Music-Recommendation-Application",
+      skills: ["Python", "NLP", "NLTK", "APIs", "Sci-kit Learn", "Pandas"],
+      image: "/images/music-recommendation.jpg",
     },
   ],
+
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Toyota Motor Corporation",
+      title: "Systems Engineer - Computer Vision",
+      dateRange: "May 2025 – Aug 2025",
+      logo: "/images/toyota-logo.png",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Built image augmentation pipeline eliminating data prep bottlenecks, saving 40+ hours per deployment.",
+        "Designed .NET annotation tool reducing labeling time by 40 minutes per batch.",
+        "Led migration from YOLO to DETR, reducing false positives by 60%.",
+        "Maintained OAK-D cameras ensuring zero downtime.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "SIRRL – University of Waterloo",
+      title: "Undergraduate Research Assistant",
+      dateRange: "Jan 2025 – Apr 2025",
+      logo: "/images/waterloo-logo.png",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Researched conversational turn-taking algorithms for social robots in healthcare contexts.",
+        "Integrated TurnGPT and VAP models on Furhat robots, reducing interruption rate by 10%.",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "Toyota Motor Corporation",
+      title: "Systems Engineer - Robotics",
+      dateRange: "Sep 2024 – Dec 2024",
+      logo: "/images/toyota-logo.png",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Redesigned predictive maintenance with LSTM, cutting false alerts by 500/day.",
+        "Deployed AGV notification system with C++ reducing downtime by 30 mins/shift.",
+        "Built full-stack .NET + SQLite app for 200+ showcase votes.",
+      ],
+    },
+    {
+      company: "MCAN Financial",
+      title: "Software/Applications Developer",
+      dateRange: "Jan 2024 – Apr 2024",
+      logo: "/images/mcan-logo.png",
+      bullets: [
+        "Modernized 4 legacy ASP.NET mortgage pages reducing broker time by 30 mins.",
+        "Optimized lending location algorithm improving efficiency by 1 hour.",
+      ],
+    },
+    {
+      company: "Day5 Analytics",
+      title: "RPA Analyst",
+      dateRange: "May 2023 – Sep 2023",
+      logo: "/images/day5-logo.png",
+      bullets: [
+        "Developed end-to-end energy data analytics solution automating consumption analysis.",
+        "Delivered average $150 annual savings per client through optimized recommendations.",
       ],
     },
   ],
+
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "University of Waterloo",
+      degree: "BASc in Mechatronics Engineering (AI Option)",
+      dateRange: "Sep 2022 – Apr 2027",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "Relevant Courses: Data Structures (C++), Real-Time OS (C, STM32), Numerical Methods",
+        "Hands-on experience in robotics, AI, and intelligent systems"
       ],
     },
   ],
