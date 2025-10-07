@@ -32,6 +32,15 @@ export const siteConfig = {
       image: "/images/rl-robot.jpg",
     },
     {
+      name: "Segway Simulation and Control",
+      description:
+        "Developed a Simulink model of a two-wheeled self-balancing robot (Segway) and designed a PID controller to maintain balance and follow a specified trajectory.",
+      link: "/SYDE351_Report.pdf",
+      skills: ["Matlab", "Simulink", "SimulationX", "Autonomous systems", "Control systems"],
+      image: "/images/segway.png",
+      imageFit: "contain",
+    },
+    {
       name: "AI Golf Caddie",
       description:
         "Built an end-to-end ML golf caddie that recommends optimal clubs based on distance and conditions, with regression models for swing prediction and a computer vision pipeline.",
