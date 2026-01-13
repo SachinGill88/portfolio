@@ -24,6 +24,14 @@ export const siteConfig = {
 
   projects: [
     {
+      name: "3 DOF Stewart Platform Control System",
+      description:
+        "Designed and implemented a 3 DOF Stewart platform for accurate ball positioning control. Integrated computer vision system with Logitech C270 webcam for real-time ball tracking, developed PID controllers to minimize overshoot, implemented inverse kinematics for motor angle calculations, and conducted comparative analysis of servo vs stepper motors for precision control.",
+      link: "/MTE 380 - Stewart Platform Presentation (1).pdf",
+      skills: ["Arduino", "PID Control", "Computer Vision", "Inverse Kinematics", "Matlab", "Simulink", "Control Systems"],
+      image: "/images/StewartPlatform.jpg",
+    },
+    {
       name: "RL Robot Stand Up Policy",
       description:
         "Designed and implemented a reinforcement learning algorithm to train a 30 DOF humanoid robot for autonomous fall recovery, with a fallen pose generation system and GPU-accelerated training.",
